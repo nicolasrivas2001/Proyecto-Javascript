@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: white;
+  font-weight: 600;
+}
+
+body nav {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+body nav #contenedorLogo {
+  display: inline;
+  width: 35%;
+}
+
+body nav #contenedorLogo img {
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+body nav #categorias {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+body nav #categorias ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body nav #categorias ul li {
+  list-style: none;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+body nav #categorias ul li:hover {
+  color: #f17979;
+  cursor: pointer;
+}
+
+body nav #carrito {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+body nav #carrito #btn-carrito {
+  display: none;
+}
+
+body nav #carrito #btn-carrito:checked ~ #carrito-dropdown {
+  top: 990%;
+}
+
+body nav #carrito #imgCarrito img {
+  margin-top: 3px;
+  width: 90px;
+  cursor: pointer;
+}
+
+body #productos {
+  margin-top: 90px;
+}
+
+body #productos div {
+  width: 100%;
+}
+
+body #productos div div div div {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #productos div div div div img {
+  width: 50%;
+}
+
+body #productos div div div #agregarAlCarrito {
+  margin-bottom: 20px;
+}
+
+body #productos div div div #agregarAlCarrito div {
+  width: 10%;
+  color: white;
+  background-color: #f17979;
+  border-radius: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+body #productos div div div #agregarAlCarrito div:hover {
+  background-color: #dd9c9c;
+}
+
+body #carrito-dropdown {
+  position: fixed;
+  background-color: white;
+  border: 1px solid #292525;
+  top: 900%;
+  right: 1%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+  max-height: 90%;
+  overflow: scroll;
+}
+
+body #carrito-dropdown #finalizarCompra div {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  background-color: #f17979;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+body #carrito-dropdown div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #carrito-dropdown button {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #cf4b4b;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+body #numero-carrito {
+  color: #f17979;
+  text-align: center;
+  width: 1.4%;
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid #292525;
+  top: 5%;
+  right: 1.2%;
+}
+
+body #footer {
+  color: white;
+  background-color: black;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body #footer div {
+  width: 33%;
+}
+
+body #footer div h2, body #footer div h3, body #footer div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #footer div h3 {
+  color: #cf4b4b;
+}
+
+body #footer div p {
+  font-weight: 400;
+}
+
+body #footer #titulo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */
